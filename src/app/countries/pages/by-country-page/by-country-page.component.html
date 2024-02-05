@@ -7,6 +7,7 @@
     <shared-search-box 
       placeholder="Buscar por país"
       (onDebounce)="searchByCountry($event)"
+      [initialValue]="initialValue"
     ></shared-search-box>
   </div>
 </div>
@@ -18,4 +19,4 @@
     
     <countries-table [countries]="countries"></countries-table>
   </div>
-</div>kw
+</div>

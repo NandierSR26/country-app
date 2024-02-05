@@ -21,6 +21,9 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
   @Input()
   public placeholder: string = '';
 
+  @Input()
+  public initialValue: string = '';
+
   ngOnInit(): void {
     this.debouncerSubscription = this.debouncer
       .pipe( 
@@ -42,6 +45,5 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
   onKeyPress( searchTerm: string ) {
     this.debouncer.next( searchTerm );
   }
-
 
 }
