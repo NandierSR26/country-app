@@ -6,7 +6,7 @@
     <!-- SeacrhBox -->
     <shared-search-box 
       placeholder="Buscar por capital"
-      (onValue)="searchByCapital($event)"
+      (onDebounce)="searchByCapital( $event )"
     ></shared-search-box>
   </div>
 </div>
